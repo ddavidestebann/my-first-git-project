@@ -13,7 +13,6 @@ import requests
 import time
 
 # Replace with your actual webhook URL
-
 WEBHOOK_URL = "https://hooks.slack.com/services/XXXXX/XXXXX/XXXXX"
 
 def send_slack_message(message):
@@ -28,4 +27,6 @@ for epoch in range(1, 6):
     time.sleep(2)  # simulate processing time
 
 send_slack_message("✅ Training Completed!")
+
+send_slack_message("💯 Sending new testing message")
 
